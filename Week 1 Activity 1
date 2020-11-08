@@ -1,0 +1,12 @@
+while True:
+  try: 
+    num = int(input("enter a number: "))
+    break
+
+  except: print("please enter an integer only")
+
+print(f"The even multiplication table for {num} is:")
+
+for i in range(2,21):
+  if (i*num) % 2 == 0:
+    print(f" {i:>8} times {num} is {i*num}")
